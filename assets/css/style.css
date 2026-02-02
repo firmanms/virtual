@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* Prevent scrolling on the main page */
+}
+
+#panorama {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #000;
+}
+
+/* Optional: Add a title overlay */
+.tour-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    pointer-events: none; /* Let clicks pass through to the viewer */
+    backdrop-filter: blur(5px);
+}
+
+.tour-title h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.tour-title p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
